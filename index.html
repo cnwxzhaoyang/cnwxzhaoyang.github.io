@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ASeek Support</title>
+    <title>ASeek - Fast Local File Search for Mac</title>
     <meta
       name="description"
-      content="ASeek support, privacy information, and contact details."
+      content="ASeek is a fast local file search app for macOS with folder indexing, quick keyboard access, previews, and privacy-first local search."
     />
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
@@ -14,14 +14,169 @@
     <main class="page">
       <section class="hero">
         <p class="eyebrow">ASeek</p>
-        <h1>Support for fast local file search on Mac.</h1>
+        <h1>Fast local file search for Mac.</h1>
         <p class="lead">
-          Get help with indexing folders, changing shortcuts, managing permissions,
-          and understanding how ASeek keeps search local to your Mac.
+          ASeek helps you find files, folders, and apps from a compact keyboard-first
+          search window. Choose the folders you want to index, search instantly, and
+          keep your file data on your Mac.
         </p>
         <div class="actions">
-          <a class="button primary" href="./support/">Open Support</a>
+          <a class="button primary" href="./support/">Technical Support</a>
           <a class="button" href="./privacy/">Privacy Policy</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>What ASeek does</h2>
+        <div class="grid">
+          <article>
+            <h3>Local file search</h3>
+            <p>
+              Build a local index for selected folders and quickly search file names,
+              folders, and applications without sending your index to a server.
+            </p>
+          </article>
+          <article>
+            <h3>Keyboard-first access</h3>
+            <p>
+              Open the search panel with a global shortcut, type, navigate results,
+              and open files without breaking focus.
+            </p>
+          </article>
+          <article>
+            <h3>Flexible scan roots</h3>
+            <p>
+              Add only the folders you want ASeek to scan. macOS folder permissions
+              are requested explicitly and can be changed later.
+            </p>
+          </article>
+          <article>
+            <h3>Useful previews</h3>
+            <p>
+              Review key file details and preview supported items before opening
+              them, so search results are easier to compare.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Highlights</h2>
+        <ul class="feature-list">
+          <li>Designed for macOS with a compact search window and menu bar access.</li>
+          <li>Local-first indexing for file names, paths, recent activity, and ranking.</li>
+          <li>Customizable global shortcut, appearance, language, preview behavior, and ignored folders.</li>
+          <li>Sandbox-friendly folder authorization using macOS security-scoped bookmarks.</li>
+          <li>No account required and no upload of file names, paths, contents, or search queries.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Keyboard Shortcuts</h2>
+        <div class="shortcuts">
+          <div><kbd>Command</kbd><kbd>K</kbd><span>Open or focus ASeek search</span></div>
+          <div><kbd>↑</kbd><kbd>↓</kbd><span>Move through search results</span></div>
+          <div><kbd>Enter</kbd><span>Open the selected result</span></div>
+          <div><kbd>Command</kbd><kbd>Enter</kbd><span>Reveal the selected result in Finder</span></div>
+          <div><kbd>Command</kbd><kbd>Shift</kbd><kbd>C</kbd><span>Copy the selected file path</span></div>
+          <div><kbd>Esc</kbd><span>Hide the search window</span></div>
+        </div>
+        <p class="note">
+          The global shortcut can be changed in ASeek Settings.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Advanced Search</h2>
+        <p>
+          ASeek supports Everything-style search operators for narrowing results
+          without leaving the search box.
+        </p>
+        <div class="syntax-grid">
+          <div><code>ext:pdf</code><span>Limit results to one extension</span></div>
+          <div><code>path:downloads</code><span>Narrow matches to a path fragment</span></div>
+          <div><code>name:report</code><span>Search only within filenames</span></div>
+          <div><code>folder:</code> <code>file:</code><span>Restrict results to folders or files</span></div>
+          <div><code>!draft</code><span>Exclude unwanted keywords</span></div>
+          <div><code>"annual report"</code><span>Treat a spaced phrase as one unit</span></div>
+        </div>
+        <p class="note">
+          <code>*</code> matches any length, <code>?</code> matches one character,
+          spaces act as AND, and filters can be combined.
+        </p>
+        <div class="example-grid">
+          <div><code>ext:rs path:src</code><span>Rust files under a src path</span></div>
+          <div><code>invoice !draft</code><span>Invoices excluding draft matches</span></div>
+          <div><code>path:components !test ext:vue</code><span>Vue components excluding tests</span></div>
+          <div><code>folder: name:src*</code><span>Folders whose names start with src</span></div>
+        </div>
+      </section>
+
+      <section class="section zh" lang="zh-CN">
+        <h2>主要功能</h2>
+        <div class="grid">
+          <article>
+            <h3>本地文件搜索</h3>
+            <p>
+              为你选择的目录建立本地索引，快速搜索文件、文件夹和应用，索引数据不上传服务器。
+            </p>
+          </article>
+          <article>
+            <h3>快捷键唤起</h3>
+            <p>
+              通过全局快捷键打开搜索面板，输入关键词后即可用键盘浏览结果并打开文件。
+            </p>
+          </article>
+          <article>
+            <h3>目录权限可控</h3>
+            <p>
+              只扫描你主动添加并授权的目录，不需要索引时可以随时从扫描路径中移除。
+            </p>
+          </article>
+          <article>
+            <h3>预览与结果对比</h3>
+            <p>
+              搜索结果会展示文件信息，并支持预览部分文件，减少打开错误文件的次数。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section zh" lang="zh-CN">
+        <h2>快捷键</h2>
+        <div class="shortcuts">
+          <div><kbd>Command</kbd><kbd>K</kbd><span>打开或聚焦 ASeek 搜索</span></div>
+          <div><kbd>↑</kbd><kbd>↓</kbd><span>切换搜索结果</span></div>
+          <div><kbd>Enter</kbd><span>打开选中的结果</span></div>
+          <div><kbd>Command</kbd><kbd>Enter</kbd><span>在 Finder 中显示选中结果</span></div>
+          <div><kbd>Command</kbd><kbd>Shift</kbd><kbd>C</kbd><span>复制选中文件路径</span></div>
+          <div><kbd>Esc</kbd><span>隐藏搜索窗口</span></div>
+        </div>
+        <p class="note">全局快捷键可在 ASeek 设置中修改。</p>
+      </section>
+
+      <section class="section zh" lang="zh-CN">
+        <h2>高级搜索</h2>
+        <p>
+          ASeek 支持类似 Everything 的搜索语法，可直接在搜索框中用条件缩小结果范围。
+        </p>
+        <div class="syntax-grid">
+          <div><code>ext:pdf</code><span>只看指定扩展名</span></div>
+          <div><code>path:downloads</code><span>把结果限制在某段路径内</span></div>
+          <div><code>name:report</code><span>只在文件名范围内查找</span></div>
+          <div><code>folder:</code> <code>file:</code><span>限定结果类型为目录或文件</span></div>
+          <div><code>!draft</code><span>排除不想看到的关键词</span></div>
+          <div><code>"annual report"</code><span>把带空格的短语视为一个整体</span></div>
+        </div>
+        <p class="note">
+          <code>*</code> 匹配任意长度字符，<code>?</code> 匹配任意单个字符，
+          空格分隔多个条件并按 AND 处理，多个过滤条件可以组合使用。
+        </p>
+        <div class="example-grid">
+          <div><code>ext:rs path:src</code><span>只看 src 路径下的 Rust 文件</span></div>
+          <div><code>invoice !draft</code><span>包含 invoice，但排除 draft</span></div>
+          <div><code>path:components !test ext:vue</code><span>组件目录下的 Vue 文件，并排除测试相关项</span></div>
+          <div><code>folder: name:src*</code><span>只搜索名称以 src 开头的文件夹</span></div>
         </div>
       </section>
 
