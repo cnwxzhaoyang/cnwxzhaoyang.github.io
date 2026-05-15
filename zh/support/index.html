@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ASeek 技术支持</title>
+    <meta name="description" content="ASeek 技术支持：目录索引、快捷键、权限、高级搜索语法和隐私说明。" />
+    <link rel="canonical" href="https://cnwxzhaoyang.github.io/zh/support/" />
+    <link rel="alternate" hreflang="x-default" href="https://cnwxzhaoyang.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://cnwxzhaoyang.github.io/support/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://cnwxzhaoyang.github.io/zh/support/" />
+    <link rel="icon" href="../../assets/app-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ASeek 技术支持" />
+    <meta property="og:description" content="获取 ASeek 目录索引、全局快捷键、权限管理和高级搜索语法帮助。" />
+    <meta property="og:image" content="https://cnwxzhaoyang.github.io/assets/app-icon.png" />
+    <meta property="og:url" content="https://cnwxzhaoyang.github.io/zh/support/" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <main class="page zh">
+      <nav class="topnav">
+        <a href="../">首页</a>
+        <a href="./">支持</a>
+        <a href="../privacy/">隐私</a>
+        <a href="../../support/" lang="en">English</a>
+      </nav>
+
+      <section class="hero compact">
+        <p class="eyebrow">技术支持</p>
+        <h1>ASeek 支持</h1>
+        <p class="lead">ASeek 是一款 macOS 本地文件、文件夹和应用搜索工具。本页面为 App Store 用户提供支持信息。</p>
+      </section>
+
+      <section class="section">
+        <h2>联系</h2>
+        <p>如需帮助、反馈问题或提出建议，请联系：</p>
+        <p class="contact"><a href="mailto:cnwxzhaoyang@163.com">cnwxzhaoyang@163.com</a></p>
+      </section>
+
+      <section class="section">
+        <h2>常见主题</h2>
+        <div class="grid">
+          <article>
+            <h3>添加扫描目录</h3>
+            <p>打开 ASeek 设置，进入“搜索”，选择需要索引的目录。macOS 会请求目录访问授权。</p>
+          </article>
+          <article>
+            <h3>修改全局快捷键</h3>
+            <p>打开“通用”设置并录制新的快捷键。如果快捷键已被其他应用占用，请换一个组合。</p>
+          </article>
+          <article>
+            <h3>管理目录权限</h3>
+            <p>ASeek 只索引你授权的目录。不再需要索引时，可以从扫描路径中移除对应目录。</p>
+          </article>
+          <article>
+            <h3>恢复默认偏好设置</h3>
+            <p>在设置中使用“恢复默认偏好设置”，可重置快捷键、外观、预览和忽略目录等偏好。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>快捷键</h2>
+        <div class="shortcuts">
+          <div><kbd>Command</kbd><kbd>K</kbd><span>打开或聚焦 ASeek 搜索</span></div>
+          <div><kbd>↑</kbd><kbd>↓</kbd><span>切换搜索结果</span></div>
+          <div><kbd>Enter</kbd><span>打开选中的结果</span></div>
+          <div><kbd>Command</kbd><kbd>Enter</kbd><span>在 Finder 中显示选中结果</span></div>
+          <div><kbd>Command</kbd><kbd>Shift</kbd><kbd>C</kbd><span>复制选中文件路径</span></div>
+          <div><kbd>Esc</kbd><span>隐藏搜索窗口</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>搜索语法</h2>
+        <p>当普通关键词返回结果太多时，可以使用高级搜索条件；多个条件可以组合在同一个查询中。</p>
+        <div class="example-grid">
+          <div><code>*.rs</code><span>匹配所有 Rust 文件</span></div>
+          <div><code>app*.vue</code><span>匹配以 app 开头、以 .vue 结尾的名称</span></div>
+          <div><code>ext:rs path:src</code><span>只看 src 路径下的 Rust 文件</span></div>
+          <div><code>path:components !test ext:vue</code><span>组件目录下的 Vue 文件，并排除测试相关项</span></div>
+          <div><code>folder: name:src*</code><span>只搜索名称以 src 开头的文件夹</span></div>
+          <div><code>dir: path:project *demo*</code><span>只搜索项目路径下并命中 demo 的目录</span></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

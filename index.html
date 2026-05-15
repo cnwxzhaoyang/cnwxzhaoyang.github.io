@@ -8,25 +8,141 @@
       name="description"
       content="ASeek is a fast local file search app for macOS with folder indexing, quick keyboard access, previews, and privacy-first local search."
     />
+    <link rel="canonical" href="https://cnwxzhaoyang.github.io/" />
+    <link rel="alternate" hreflang="x-default" href="https://cnwxzhaoyang.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://cnwxzhaoyang.github.io/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://cnwxzhaoyang.github.io/zh/" />
+    <link rel="icon" href="./assets/app-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ASeek - Fast Local File Search for Mac" />
+    <meta
+      property="og:description"
+      content="Search files, folders, and apps from a keyboard-first macOS search window. Local index, advanced operators, and privacy-first design."
+    />
+    <meta property="og:image" content="https://cnwxzhaoyang.github.io/assets/app-icon.png" />
+    <meta property="og:url" content="https://cnwxzhaoyang.github.io/" />
+    <meta name="twitter:card" content="summary" />
     <link rel="stylesheet" href="./assets/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "ASeek",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "macOS",
+        "description": "ASeek is a fast local file search app for macOS with folder indexing, advanced search operators, previews, and keyboard-first access.",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/aseek/id6767813447"
+        },
+        "url": "https://cnwxzhaoyang.github.io/",
+        "downloadUrl": "https://apps.apple.com/app/aseek/id6767813447"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does ASeek upload my files or search queries?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. ASeek is designed for local indexing and local search. It does not upload file names, file paths, file contents, or search queries."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do I need to choose folders?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "macOS sandboxing requires explicit folder authorization. ASeek indexes only the folders you add."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why can I not find a file?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check whether the folder is included in scan roots, whether the file is inside an ignored folder, and whether indexing has completed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I change the global shortcut?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Open ASeek Settings and record a new shortcut in General settings."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <main class="page">
-      <section class="hero">
-        <p class="eyebrow">ASeek</p>
-        <h1>Fast local file search for Mac.</h1>
-        <p class="lead">
-          ASeek helps you find files, folders, and apps from a compact keyboard-first
-          search window. Choose the folders you want to index, search instantly, and
-          keep your file data on your Mac.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="./support/">Technical Support</a>
-          <a class="button" href="./privacy/">Privacy Policy</a>
+      <nav class="topnav home-nav">
+        <a href="#features">Features</a>
+        <a href="#syntax">Search Syntax</a>
+        <a href="#faq">FAQ</a>
+        <a href="./support/">Support</a>
+        <a href="./privacy/">Privacy</a>
+        <a href="./zh/" lang="zh-CN">中文</a>
+      </nav>
+
+      <section class="hero product-hero">
+        <div class="hero-copy">
+          <div class="brand-row">
+            <img src="./assets/app-icon.png" alt="ASeek app icon" />
+            <p class="eyebrow">ASeek</p>
+          </div>
+          <h1>Fast local file search for Mac.</h1>
+          <p class="lead">
+            ASeek helps you find files, folders, and apps from a compact keyboard-first
+            search window. Choose the folders you want to index, search instantly, and
+            keep your file data on your Mac.
+          </p>
+          <div class="actions">
+            <a class="badge-link" href="https://apps.apple.com/app/aseek/id6767813447" aria-label="Download ASeek on the Mac App Store">
+              <img
+                src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/en-us"
+                alt="Download on the Mac App Store"
+              />
+            </a>
+            <a class="button" href="#syntax">View Search Syntax</a>
+            <a class="button" href="./support/">Technical Support</a>
+          </div>
+          <p class="trust-line">No account. No cloud index. No file upload.</p>
         </div>
+
+        <figure class="product-preview">
+          <img
+            src="./assets/screenshots/search.png"
+            alt="ASeek search window preview with advanced file search results"
+          />
+          <figcaption>ASeek search window with local file results.</figcaption>
+        </figure>
       </section>
 
-      <section class="section">
+      <section id="download" class="section download-section">
+        <div>
+          <h2>Mac App Store</h2>
+          <p>
+            ASeek has passed App Store review and is eligible for distribution.
+            Download it from the Mac App Store.
+          </p>
+        </div>
+        <a class="badge-link" href="https://apps.apple.com/app/aseek/id6767813447" aria-label="Open ASeek on the Mac App Store">
+          <img
+            src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/en-us"
+            alt="Download on the Mac App Store"
+          />
+        </a>
+      </section>
+
+      <section id="features" class="section">
         <h2>What ASeek does</h2>
         <div class="grid">
           <article>
@@ -61,6 +177,49 @@
       </section>
 
       <section class="section">
+        <h2>Built for</h2>
+        <div class="grid">
+          <article>
+            <h3>Developers</h3>
+            <p>Jump to source files, configs, docs, and project folders with path and extension filters.</p>
+          </article>
+          <article>
+            <h3>Daily work</h3>
+            <p>Find PDFs, spreadsheets, downloads, and recent files without opening Finder first.</p>
+          </article>
+          <article>
+            <h3>Design and product teams</h3>
+            <p>Search assets, exports, screenshots, and handoff files across authorized folders.</p>
+          </article>
+          <article>
+            <h3>Privacy-sensitive workflows</h3>
+            <p>Keep local file names, paths, previews, and queries on the Mac you use.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="screenshots" class="section">
+        <h2>Screenshots</h2>
+        <p>
+          ASeek search, settings, and advanced syntax views on macOS.
+        </p>
+        <div class="screenshot-grid">
+          <figure>
+            <img src="./assets/screenshots/search.png" alt="ASeek search window screenshot" />
+            <figcaption>Fast search window</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/screenshots/settings.png" alt="ASeek settings screenshot" />
+            <figcaption>Folder indexing and shortcuts</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/screenshots/syntax.png" alt="ASeek advanced search syntax screenshot" />
+            <figcaption>Advanced search syntax</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
         <h2>Highlights</h2>
         <ul class="feature-list">
           <li>Designed for macOS with a compact search window and menu bar access.</li>
@@ -86,7 +245,7 @@
         </p>
       </section>
 
-      <section class="section">
+      <section id="syntax" class="section">
         <h2>Advanced Search</h2>
         <p>
           ASeek supports Everything-style search operators for narrowing results
@@ -112,71 +271,34 @@
         </div>
       </section>
 
-      <section class="section zh" lang="zh-CN">
-        <h2>主要功能</h2>
-        <div class="grid">
-          <article>
-            <h3>本地文件搜索</h3>
-            <p>
-              为你选择的目录建立本地索引，快速搜索文件、文件夹和应用，索引数据不上传服务器。
-            </p>
-          </article>
-          <article>
-            <h3>快捷键唤起</h3>
-            <p>
-              通过全局快捷键打开搜索面板，输入关键词后即可用键盘浏览结果并打开文件。
-            </p>
-          </article>
-          <article>
-            <h3>目录权限可控</h3>
-            <p>
-              只扫描你主动添加并授权的目录，不需要索引时可以随时从扫描路径中移除。
-            </p>
-          </article>
-          <article>
-            <h3>预览与结果对比</h3>
-            <p>
-              搜索结果会展示文件信息，并支持预览部分文件，减少打开错误文件的次数。
-            </p>
-          </article>
+      <section class="section privacy-promise">
+        <h2>Privacy-first by default</h2>
+        <div class="promise-grid">
+          <div><strong>No account</strong><span>Use ASeek without sign-in or cloud sync.</span></div>
+          <div><strong>No file upload</strong><span>File names, paths, contents, and queries stay local.</span></div>
+          <div><strong>Explicit folders</strong><span>ASeek indexes only folders you choose and authorize.</span></div>
         </div>
       </section>
 
-      <section class="section zh" lang="zh-CN">
-        <h2>快捷键</h2>
-        <div class="shortcuts">
-          <div><kbd>Command</kbd><kbd>K</kbd><span>打开或聚焦 ASeek 搜索</span></div>
-          <div><kbd>↑</kbd><kbd>↓</kbd><span>切换搜索结果</span></div>
-          <div><kbd>Enter</kbd><span>打开选中的结果</span></div>
-          <div><kbd>Command</kbd><kbd>Enter</kbd><span>在 Finder 中显示选中结果</span></div>
-          <div><kbd>Command</kbd><kbd>Shift</kbd><kbd>C</kbd><span>复制选中文件路径</span></div>
-          <div><kbd>Esc</kbd><span>隐藏搜索窗口</span></div>
-        </div>
-        <p class="note">全局快捷键可在 ASeek 设置中修改。</p>
-      </section>
-
-      <section class="section zh" lang="zh-CN">
-        <h2>高级搜索</h2>
-        <p>
-          ASeek 支持类似 Everything 的搜索语法，可直接在搜索框中用条件缩小结果范围。
-        </p>
-        <div class="syntax-grid">
-          <div><code>ext:pdf</code><span>只看指定扩展名</span></div>
-          <div><code>path:downloads</code><span>把结果限制在某段路径内</span></div>
-          <div><code>name:report</code><span>只在文件名范围内查找</span></div>
-          <div><code>folder:</code> <code>file:</code><span>限定结果类型为目录或文件</span></div>
-          <div><code>!draft</code><span>排除不想看到的关键词</span></div>
-          <div><code>"annual report"</code><span>把带空格的短语视为一个整体</span></div>
-        </div>
-        <p class="note">
-          <code>*</code> 匹配任意长度字符，<code>?</code> 匹配任意单个字符，
-          空格分隔多个条件并按 AND 处理，多个过滤条件可以组合使用。
-        </p>
-        <div class="example-grid">
-          <div><code>ext:rs path:src</code><span>只看 src 路径下的 Rust 文件</span></div>
-          <div><code>invoice !draft</code><span>包含 invoice，但排除 draft</span></div>
-          <div><code>path:components !test ext:vue</code><span>组件目录下的 Vue 文件，并排除测试相关项</span></div>
-          <div><code>folder: name:src*</code><span>只搜索名称以 src 开头的文件夹</span></div>
+      <section id="faq" class="section">
+        <h2>FAQ</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Does ASeek upload my files or search queries?</summary>
+            <p>No. ASeek is designed for local indexing and local search. It does not upload file names, file paths, file contents, or search queries.</p>
+          </details>
+          <details>
+            <summary>Why do I need to choose folders?</summary>
+            <p>macOS sandboxing requires explicit folder authorization. ASeek indexes only the folders you add.</p>
+          </details>
+          <details>
+            <summary>Why can I not find a file?</summary>
+            <p>Check whether the folder is included in scan roots, whether the file is inside an ignored folder, and whether indexing has completed.</p>
+          </details>
+          <details>
+            <summary>Can I change the global shortcut?</summary>
+            <p>Yes. Open ASeek Settings and record a new shortcut in General settings.</p>
+          </details>
         </div>
       </section>
 
@@ -188,13 +310,6 @@
         </p>
       </section>
 
-      <section class="section zh" lang="zh-CN">
-        <h2>中文支持</h2>
-        <p>
-          如需帮助、反馈问题或提出建议，请发送邮件至
-          <a href="mailto:cnwxzhaoyang@163.com">cnwxzhaoyang@163.com</a>。
-        </p>
-      </section>
     </main>
   </body>
 </html>
